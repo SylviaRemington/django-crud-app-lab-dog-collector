@@ -8,7 +8,7 @@ from django.shortcuts import render
 # Import HttpResponse to send text-based responses
 from django.http import HttpResponse
 
-# Define the home view function
+# The Homepage view function defined here:
 def home(request):
     # Send a simple HTML response
     # We import HttpResponse as per above and then this function is used to construct an HTTP response to send back to the browser, similar to res.send() in Express.
@@ -16,3 +16,7 @@ def home(request):
     # This above is my view function responding to the HTTP request.
     # The HttpResponse object we used is the simplest way to return content in Django.
 
+# About page function defined here:
+def about(request):
+    return HttpResponse('<h1>About the DogCollector</h1><h2>Who is excited about dogs and their toys?!</h2>')
+    # return render(request, 'about.html')
