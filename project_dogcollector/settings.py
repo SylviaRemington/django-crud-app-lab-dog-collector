@@ -30,13 +30,15 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# These tell Django about all the applications that are active for this project.
+# Each app can provide a set of features that can be reused in multiple projects.
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.admin', #built-in app, the admin interface that is ready to use immediately
+    'django.contrib.auth', #built-in app, the authentication system
+    'django.contrib.contenttypes', #built-in app, a framework for content types
+    'django.contrib.sessions', #built-in app, a session framework
+    'django.contrib.messages', #built-in app, a messaging framework
+    'django.contrib.staticfiles', #built-in app, a framework to manage static files
 ]
 
 MIDDLEWARE = [
