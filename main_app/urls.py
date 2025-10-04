@@ -35,4 +35,4 @@ urlpatterns = [
 # The name='home' kwarg is technically optional but will come in handy for referencing the URL in other parts of the app, 
 # especially from within templates, so we will always use it.
 
-    
+# Regoing through all the code again before proceeding forward
