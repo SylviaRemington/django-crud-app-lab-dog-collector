@@ -3,6 +3,7 @@ from . import views # Importing views to connect routes to view functions
 
 # The urlpatterns list is where you specify each route, 
 # similar to how routes are defined and grouped in controllers in Express.
+# Best practice for each app to manage its own routes & then include those in the project's urlconfig
 urlpatterns = [
     # Routes will be added here
     # Here is where we define the main_app's homepage URL & view
@@ -16,23 +17,3 @@ urlpatterns = [
     path('about/', views.about, name='about'),
 ]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Addtl notes:
-# The name='home' kwarg is technically optional but will come in handy for referencing the URL in other parts of the app, 
-# especially from within templates, so we will always use it.
-
-# Regoing through all the code again before proceeding forward

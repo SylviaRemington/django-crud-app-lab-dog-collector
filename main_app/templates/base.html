@@ -1,3 +1,13 @@
+<!-- The base.html file acts as the foundational layout for your Django application. 
+ It includes common elements like the head, navigation bar, and optional footer that 
+ are shared across multiple pages.
+ -->
+
+ <!-- This template will serve as the base for all other pages, allowing me to maintain 
+  a consistent look and feel throughout my application while adhering to DRY principles. -->
+
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="" />
     <title>Dog Collector</title>
+    <!-- This block is used to inject custom head content such as CSS links or 
+     scripts specific to a child template. -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
     {% block head %} 
     {% endblock %}
   </head>
@@ -23,6 +36,9 @@
       </nav>
     </header>
     <main>
+      <!-- This block is where the main content of each child template is defined. -->
+      <!-- These use template tags to put loging & control flow into templates -->
+      <!-- The block and endblock tags define areas in a template that can be overridden by child templates. -->
      {% block content %} 
      {% endblock %}
      </main>
@@ -30,5 +46,3 @@
 </html>
 
 
-
-<!-- FYI - notes in django with any code in it will mess it up. -->

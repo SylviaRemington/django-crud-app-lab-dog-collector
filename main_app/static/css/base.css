@@ -1,0 +1,8 @@
+/* static/css/base.css  */
+/* Note: Anytime you add or alter a file to your static directory 
+the additions or changes may not immediately appear on a page refesh. 
+In this case, you may need do a hard refresh of your page with Command + Shift + R on macOS */
+
+body {
+  background-color: rgb(36, 139, 191);
+}

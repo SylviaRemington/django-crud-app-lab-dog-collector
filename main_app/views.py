@@ -6,7 +6,7 @@ from django.shortcuts import render
 # Creating a basic view function that will serve as the response for the homepage
 
 # Import HttpResponse to send text-based responses
-# from django.http import HttpResponse
+from django.http import HttpResponse
 
 
 # The Homepage view function defined here:
