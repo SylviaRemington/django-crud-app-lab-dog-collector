@@ -15,5 +15,10 @@ urlpatterns = [
 
     # ABOUT PAGE
     path('about/', views.about, name='about'),
+
+    # DOGS INDEX PAGE - route
+    path('dogs/', views.dog_index, name='dog-index'),
+
 ]
+
 
