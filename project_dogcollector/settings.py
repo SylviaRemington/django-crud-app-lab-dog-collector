@@ -34,13 +34,14 @@ ALLOWED_HOSTS = []
 # Each app can provide a set of features that can be reused in multiple projects.
 # These apps add functionalities like the user interface for the admin section, user authentication, and managing static files
 INSTALLED_APPS = [
-    'main_app', #adding this let's Django know that it should be included as a part of the project setup & makes sure it integrates with django's other core functionalities like database and the urls.py (URL dispatcher as per lesson)
     'django.contrib.admin', #built-in app, the admin interface that is ready to use immediately
     'django.contrib.auth', #built-in app, the authentication system
     'django.contrib.contenttypes', #built-in app, a framework for content types
     'django.contrib.sessions', #built-in app, a session framework
     'django.contrib.messages', #built-in app, a messaging framework
     'django.contrib.staticfiles', #built-in app, a framework to manage static files
+    'main_app', #adding this let's Django know that it should be included as a part of the project setup & makes sure it integrates with django's other core functionalities like database and the urls.py (URL dispatcher as per lesson)
+
 ]
 
 MIDDLEWARE = [
