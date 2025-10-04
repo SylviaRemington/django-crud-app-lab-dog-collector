@@ -4,7 +4,7 @@
 
 ## About
 
-**Welcome to Dog Collector, my first venture into building a full CRUD application using Django <br> with HTML Templates!** 
+**Welcome to Dog Collector, my first venture into building a full CRUD application using Django with HTML Templates!** 
 
 This project is an excellent example of what I'm capable of creating for future full-stack Django projects, and more! This Django Creation is done with HTML templates for practice. 
 
