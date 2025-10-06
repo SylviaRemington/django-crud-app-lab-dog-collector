@@ -22,3 +22,6 @@ urlpatterns = [
 ]
 
 
+
+
+# NEXT UP: Rendering Data in Templates
